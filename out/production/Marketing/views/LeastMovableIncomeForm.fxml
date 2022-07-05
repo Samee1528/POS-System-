@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="LeastMovableIncomeFormContaxt" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #01a3a4;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LeastMovableIncomeFormController">
+   <children>
+      <Label layoutX="150.0" text="Least Movable Income">
+         <font>
+            <Font name="Cambria Bold" size="31.0" />
+         </font>
+      </Label>
+      <Separator layoutX="124.0" layoutY="39.0" prefHeight="5.0" prefWidth="356.0" />
+      <TableView layoutX="14.0" layoutY="60.0" prefHeight="282.0" prefWidth="579.0">
+        <columns>
+          <TableColumn prefWidth="174.0" text="Type" />
+          <TableColumn prefWidth="187.0" text="Date" />
+            <TableColumn prefWidth="217.0" text="Price" />
+        </columns>
+      </TableView>
+      <JFXButton layoutX="14.0" layoutY="355.0" onAction="#GoBack" prefHeight="28.0" prefWidth="65.0" style="-fx-background-color: #26de81;" text="Back">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="467.0" layoutY="355.0" prefHeight="19.0" prefWidth="78.0" style="-fx-background-color: #341f97;" text="View" textFill="#e4dfdf">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

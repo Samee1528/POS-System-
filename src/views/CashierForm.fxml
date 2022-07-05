@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="CashierFormContaxt" prefHeight="130.0" prefWidth="441.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CashierFormController">
+   <children>
+      <ImageView fitHeight="305.0" fitWidth="509.0" layoutX="-13.0" layoutY="-7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/pich.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="208.0" text="Cashier">
+         <font>
+            <Font name="System Bold Italic" size="36.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="0.5" cycleMethod="REPEAT" radius="0.5">
+               <stops>
+                  <Stop color="#ff00cc" />
+                  <Stop color="#ff00cc" offset="0.5593869731800766" />
+                  <Stop color="#ff1cc3" offset="0.7049808429118773" />
+                  <Stop color="#f000a6" offset="0.7049808429118773" />
+                  <Stop color="#f000a6" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Label>
+      <Separator layoutX="179.0" layoutY="52.0" prefWidth="200.0" />
+      <JFXButton layoutX="98.0" layoutY="185.0" onAction="#openManageOrderForm" style="-fx-background-color: #7d5fff;" text="Manage Order" textFill="WHITE">
+         <font>
+            <Font name="Arial Black" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="146.0" layoutY="106.0" onAction="#openMakeCustomerOrderForm" style="-fx-background-color: #7d5fff;" text="Make Customer Order" textFill="WHITE">
+         <font>
+            <Font name="Arial Black" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="14.0" layoutY="244.0" onAction="#GoBack" prefHeight="27.0" prefWidth="61.0" style="-fx-background-color: #26de81;" text="Back">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

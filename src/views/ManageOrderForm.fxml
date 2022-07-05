@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="ManageOrderFormContaxt" prefHeight="399.0" prefWidth="629.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ManageOrderFormController">
+   <children>
+      <AnchorPane layoutX="-8.0" layoutY="-19.0" prefHeight="418.0" prefWidth="648.0" style="-fx-background-color: #009432;">
+         <children>
+            <TableView layoutX="15.0" layoutY="111.0" prefHeight="263.0" prefWidth="623.0">
+              <columns>
+                <TableColumn prefWidth="217.0" text="Order Id" />
+                <TableColumn prefWidth="211.0" text="Order Date" />
+                  <TableColumn prefWidth="198.0" text="Customer Id" />
+              </columns>
+            </TableView>
+            <JFXButton layoutX="320.0" layoutY="73.0" onAction="#openRemoveOrderForm" prefHeight="21.0" prefWidth="140.0" style="-fx-background-color: #ff4757;" text="Remove Order" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton layoutX="483.0" layoutY="73.0" onAction="#openModifyOrderForm" prefHeight="25.0" prefWidth="126.0" style="-fx-background-color: #7d5fff;" text="Modify Order" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <Label layoutX="194.0" layoutY="5.0" text="Manage Orders" textFill="WHITE">
+         <font>
+            <Font name="Cambria Bold" size="36.0" />
+         </font>
+      </Label>
+      <Separator layoutX="162.0" layoutY="43.0" prefHeight="13.0" prefWidth="315.0" />
+      <JFXButton layoutX="8.0" layoutY="371.0" onAction="#GoBack" prefHeight="28.0" prefWidth="63.0" style="-fx-background-color: #12CBC4;" text="Back">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

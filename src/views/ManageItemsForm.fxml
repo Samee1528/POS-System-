@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="ManageItemsFormContaxt" prefHeight="472.0" prefWidth="742.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ManageItemsFormController">
+   <children>
+      <AnchorPane layoutX="-3.0" layoutY="-6.0" prefHeight="478.0" prefWidth="745.0" style="-fx-background-color: #01a3a4;">
+         <children>
+            <TableView layoutX="8.0" layoutY="87.0" prefHeight="305.0" prefWidth="729.0">
+              <columns>
+                <TableColumn prefWidth="138.0" text="Item Code" />
+                <TableColumn prefWidth="152.0" text="Description" />
+                  <TableColumn prefWidth="147.0" text="Pack Size" />
+                  <TableColumn prefWidth="140.0" text="Unit Price" />
+                  <TableColumn prefWidth="151.0" text="Qty On Hand" />
+              </columns>
+            </TableView>
+            <Label layoutX="261.0" text="Manage Item">
+               <font>
+                  <Font name="Cambria Bold" size="38.0" />
+               </font>
+               <textFill>
+                  <LinearGradient startX="0.919047619047619">
+                     <stops>
+                        <Stop color="BLACK" />
+                        <Stop color="BLACK" offset="0.5910652920962199" />
+                        <Stop color="#6c5ce7" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Separator layoutX="227.0" layoutY="53.0" prefHeight="4.0" prefWidth="291.0" />
+            <JFXButton layoutX="249.0" layoutY="409.0" onAction="#RemoveItemOnAction" style="-fx-background-color: #ff4757;" text="Remove Item" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton layoutX="589.0" layoutY="409.0" onAction="#RegisterNewItemOnAction" style="-fx-background-color: #7d5fff;" text="Register New Item" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton layoutX="397.0" layoutY="409.0" onAction="#ModifyItemDetailsOnAction" style="-fx-background-color: #7d5fff;" text="Modify Item Details" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <JFXButton layoutX="14.0" layoutY="436.0" onAction="#GoBack" prefHeight="22.0" prefWidth="56.0" style="-fx-background-color: #26de81;" text="Back">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

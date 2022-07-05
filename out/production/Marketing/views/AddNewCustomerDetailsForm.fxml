@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="AddNewCustomerDetailsFormContext" prefHeight="418.0" prefWidth="778.0" style="-fx-background-color: #01a3a4;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddNewCustomerDetailsFormController">
+   <children>
+      <Label layoutX="200.0" layoutY="-5.0" text="Add New Customer Details">
+         <font>
+            <Font name="Cambria Math" size="33.0" />
+         </font>
+      </Label>
+      <Separator layoutX="176.0" layoutY="32.0" prefHeight="0.0" prefWidth="426.0" />
+      <TableView layoutY="199.0" prefHeight="153.0" prefWidth="778.0">
+        <columns>
+          <TableColumn prefWidth="95.0" text="Customer Id" />
+          <TableColumn prefWidth="122.0" text="Customer Title" />
+            <TableColumn prefWidth="119.0" text="Customer Name" />
+            <TableColumn prefWidth="137.0" text="Customer Address" />
+            <TableColumn prefWidth="98.0" text="City" />
+            <TableColumn prefWidth="103.0" text="Province" />
+            <TableColumn minWidth="3.0" prefWidth="103.0" text="Postel Code" />
+        </columns>
+      </TableView>
+      <JFXButton layoutX="683.0" layoutY="365.0" prefHeight="31.0" prefWidth="81.0" style="-fx-background-color: #341f97;" text="Add" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="578.0" layoutY="365.0" prefHeight="31.0" prefWidth="81.0" style="-fx-background-color: #341f97;" text="Modify" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="469.0" layoutY="365.0" prefHeight="31.0" prefWidth="81.0" style="-fx-background-color: #ff4757;" text="Remove" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="14.0" layoutY="365.0" onAction="#GoBack" prefHeight="31.0" prefWidth="81.0" style="-fx-background-color: #26de81;" text="Back">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <TextField fx:id="CustomerId" layoutX="37.0" layoutY="78.0" promptText="Customer Id" />
+      <TextField layoutX="216.0" layoutY="78.0" promptText="Customer Title" />
+      <TextField layoutX="619.0" layoutY="103.0" promptText="Customer Address" />
+      <TextField layoutX="216.0" layoutY="135.0" promptText="Province" />
+      <TextField layoutX="37.0" layoutY="135.0" promptText="City" />
+      <TextField layoutX="414.0" layoutY="135.0" promptText="Postel Code" />
+      <TextField layoutX="414.0" layoutY="78.0" promptText="Customer Name" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="300.0" prefWidth="434.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.HomePageController">
+   <children>
+      <ImageView fitHeight="306.0" fitWidth="589.0" layoutX="-9.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/download%20-%20Copy.jpg" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="14.0" layoutY="178.0" onAction="#openAdministerForm" prefHeight="9.0" prefWidth="193.0" style="-fx-background-color: #2ecc71;" text="Administer">
+         <font>
+            <Font name="Cambria Math" size="21.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="241.0" layoutY="178.0" onAction="#openCashierForm" prefHeight="9.0" prefWidth="193.0" style="-fx-background-color: #2ecc71;" text="Cashier">
+         <font>
+            <Font name="Cambria Math" size="21.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label layoutX="137.0" text="Home Page" textFill="#ff4e4e">
+         <font>
+            <Font name="System Bold Italic" size="36.0" />
+         </font>
+      </Label>
+      <Separator layoutX="69.0" layoutY="55.0" prefHeight="0.0" prefWidth="322.0" style="-fx-background-color: #182C61;" />
+   </children>
+</AnchorPane>

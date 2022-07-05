@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="267.0" prefWidth="474.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdministerFormController">
+   <children>
+      <ImageView fitHeight="304.0" fitWidth="474.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/pic.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="149.0" text="Administer" textFill="#0aff48">
+         <font>
+            <Font name="System Bold Italic" size="34.0" />
+         </font>
+      </Label>
+      <Separator layoutX="125.0" layoutY="49.0" prefHeight="3.0" prefWidth="224.0" />
+      <JFXButton layoutX="14.0" layoutY="164.0" onAction="#openReportsForm" prefHeight="25.0" prefWidth="192.0" style="-fx-background-color: #45aaf2;" text="System Report" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="246.0" layoutY="164.0" onAction="#openManageItemsForm" prefHeight="25.0" prefWidth="192.0" style="-fx-background-color: #45aaf2;" text="Manage Items" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="DailyAnualIncomeFormContext" prefHeight="393.0" prefWidth="600.0" style="-fx-background-color: #01a3a4;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DailyAnualIncomeFormController">
+   <children>
+      <Label layoutX="79.0" layoutY="7.0" text="Daily/Monthly/Annual Income">
+         <font>
+            <Font name="Cambria Bold" size="32.0" />
+         </font>
+      </Label>
+      <Separator layoutX="46.0" layoutY="47.0" prefHeight="0.0" prefWidth="509.0" />
+      <TableView layoutX="9.0" layoutY="67.0" prefHeight="262.0" prefWidth="583.0">
+        <columns>
+          <TableColumn prefWidth="208.0" text="Type" />
+          <TableColumn prefWidth="187.0" text="Date" />
+            <TableColumn prefWidth="187.0" text="Price" />
+        </columns>
+      </TableView>
+      <JFXButton layoutX="20.0" layoutY="352.0" onAction="#GoBack" prefHeight="28.0" prefWidth="59.0" style="-fx-background-color: #26de81;" text="Back">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="473.0" layoutY="348.0" prefHeight="17.0" prefWidth="82.0" style="-fx-background-color: #341f97;" text="View" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
